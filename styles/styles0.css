@@ -1,3 +1,10 @@
 body {
     background-color: white;
 }
+header  {
+    display: flex;
+    height: auto;
+}
+header img {
+    width: 100%;
+}
