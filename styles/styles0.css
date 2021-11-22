@@ -1,15 +1,25 @@
-html  {   
-    background: url(../images/gl-laying-down.jpg) no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-}
 body {
     background-color: white;
+    
 }   
 nav {
     display: flex;
     height: 100px;
     background-color: thistle;
     display: block;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    min-height: 911px;   
+}
+#splash-img {
+    justify-content: center;
+    flex-grow: 1;
+    background: url(../images/gl-laying-down.jpg) no-repeat center / cover;
+   
+}
+main {
+    background-color: tomato;
+    height: 200px;
 }
