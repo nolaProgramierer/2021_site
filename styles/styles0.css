@@ -1,7 +1,4 @@
-body {
-    background-color: white;
-    
-}   
+
 nav {
     display: flex;
     height: 100px;
@@ -9,15 +6,20 @@ nav {
     display: block;
 }
 header {
-    display: flex;
-    flex-direction: column;
-    min-height: 911px;   
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+   align-content: center;
+   justify-content: center;
 }
-#splash-img {
-    justify-content: center;
-    flex-grow: 1;
-    background: url(../images/gl-laying-down.jpg) no-repeat center / cover;
-   
+#hero-banner {
+   grid-area: 1 / 1 / 2 / 2;
+}
+#hero-img {
+    display: grid;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 main {
     background-color: tomato;
