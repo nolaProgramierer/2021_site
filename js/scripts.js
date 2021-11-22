@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", function () {
         } else {
             navbar.classList.add("sticky");
         }
-        // on each scroll event reset original scroll position to current y offset
+        // on each scroll event reset beginning scroll position to current y offset
         scroll = scrolled;
     });
   
