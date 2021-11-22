@@ -1,27 +1,81 @@
-
-nav {
-    display: flex;
-    height: 100px;
-    background-color: thistle;
-    display: block;
+body {
+    margin: 0;
+    padding: 0;
 }
-header {
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: auto;
-   align-content: center;
-   justify-content: center;
+.menu-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
 }
-#hero-banner {
-   grid-area: 1 / 1 / 2 / 2;
-}
-#hero-img {
-    display: grid;
+.nav-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    box-sizing: border-box;
+    transition: top .6s;
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    overflow: hidden;
 }
-main {
-    background-color: tomato;
-    height: 200px;
+.logo {
+    display: inline-block;
+    color: white;
+}
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font: 32px;
+    font-family: merienda;
+}
+.menu-wrapper nav {
+    float: right;
+}
+.right-nav {
+    overflow: hidden;
+    list-style: none;
+}
+.right-nav li {
+    float: left;
+    margin-left: 16px;
+}
+.right-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.banner-wrapper {
+    height: 100vh;
+    background-image: url(../images/gl-laying-down.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.bio {
+    max-width: 1000px;
+    margin: 100px auto 0;
+}
+.bio h2 {
+    font-size: 60px;
+    font-family:  bignoodletitling;
+    text-align: center;
+    color: crimson;
+}
+.bio p {
+    font-family: poppins;
+    font-size: 18px;
+    line-height: 1.8;
+}
+p::first-letter {
+    font-size: 300%;
+    color: crimson;
+}
+.nav-wrapper.animate {
+    top: -100px;
+}
+.nav-wrapper.sticky {
+    top: 0;
+    z-index: 99;
 }
