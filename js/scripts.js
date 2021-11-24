@@ -23,7 +23,5 @@ window.addEventListener("DOMContentLoaded", function () {
         // on each scroll event reset beginning scroll position to current y offset
         scroll = scrolled;
     });
-  
-
     console.log("DOM Content loaded and parsed")
 });

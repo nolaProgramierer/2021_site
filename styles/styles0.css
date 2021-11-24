@@ -2,9 +2,18 @@ body {
     margin: 0;
     padding: 0;
 }
-.menu-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
+
+header,  {
+    display: none;
+}
+/* -----------------------------------------------
+    Header
+-------------------------------------------------*/
+.banner-wrapper {
+    height: 100vh;
+    background-image: url(../images/gl-laying-down.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 .nav-wrapper {
     position: fixed;
@@ -17,41 +26,65 @@ body {
     padding: 10px;
     overflow: hidden;
 }
-.logo {
-    display: inline-block;
-    color: white;
+.menu-wrapper {
+   display: flex;
 }
-.logo a {
-    text-decoration: none;
-    color: #fff;
-    font: 32px;
-    font-family: merienda;
+.logo {
+    width: 50%;
+    color: white;
+    margin-left: 3em;
 }
 .menu-wrapper nav {
-    float: right;
+    width: 50%;  
 }
-.right-nav {
-    overflow: hidden;
-    list-style: none;
+.menu-wrapper nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    
 }
-.right-nav li {
-    float: left;
-    margin-left: 16px;
-}
-.right-nav li a {
+.menu-wrapper li a {
     color: #fff;
     text-decoration: none;
     font-family: roboto;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+    text-underline-offset: 0.2em;
 }
-.banner-wrapper {
-    height: 100vh;
-    background-image: url(../images/gl-laying-down.jpg);
-    background-size: cover;
-    background-position: center center;
+.menu-wrapper li a:hover {
+    text-decoration-color: rgba(255, 255, 255,1);
+    text-underline-offset: 0.4em;
+}
+.nav-wrapper.animate {
+    top: -100px;
+}
+.nav-wrapper.sticky {
+    top: 0;
+    z-index: 100;
+}
+/*---------------------------------------
+----------------------------------------*/
+.home-statement {
+    font-size: 2em;
+    margin: 0 15%;
+    line-height: 1.6;
+    position: relative;
+}
+.home-statement p {
+    font-family: 'Tulpen One', cursive;
+    font-size: 2em;
+    margin-top: 100px;
+}
+.home-statement p::before {
+    content: open-quote;
+    font-size: 800%;
+    position: absolute;
+    top: -.5em;
+    left: -.2em;
+    color: crimson;
 }
 .bio {
     max-width: 1000px;
@@ -68,14 +101,9 @@ body {
     font-size: 18px;
     line-height: 1.8;
 }
+/*
 p::first-letter {
     font-size: 300%;
     color: crimson;
 }
-.nav-wrapper.animate {
-    top: -100px;
-}
-.nav-wrapper.sticky {
-    top: 0;
-    z-index: 100;
-}
+*/
