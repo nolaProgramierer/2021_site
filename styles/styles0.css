@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 
@@ -118,9 +119,27 @@ p::first-letter {
 }
 .info img {
     width: 100%;
+    border-radius: 3%;
 }
 .info p {
-    font-family: poppins;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
     line-height: 1.8;
+}
+
+.word-cloud {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; 
+}
+.word-cloud img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+footer {
+    background-color: rgb(12, 12, 11);
+    height: 300px;
 }
