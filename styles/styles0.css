@@ -35,7 +35,7 @@ header {
     width: 30%;
     color: white;
     margin-left: 3em;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .menu-wrapper nav {
     width: 70%;  
@@ -140,56 +140,37 @@ p::first-letter {
     align-self: center;
     padding: 0 2em 0 2em;
 }
-#farm-heading {
+#design-heading {
     grid-row: 3 / 4;
     grid-column: 1 / 9;
 }
-#farm-tease {
+#prog-tease {
     grid-row: 4 / 5;
     grid-column: 1 / 5;
     justify-self: center;
     align-self: center;
     padding: 0 2em 0 2em;
 }
-#farm-img {
+#prog-img {
     grid-row: 4 / 5;
     grid-column: 5 / 9;
     justify-self: center;
 }
-#design-heading {
+#farm-heading {
     grid-row: 5 / 6;
     grid-column: 1 / 9;
 }
-#prog-img {
+#farm-img {
     grid-row: 6 / 7;
     grid-column: 1 / 5;
     justify-self: center;
 }
-#prog-tease {
+#farm-tease {
     grid-row: 6 / 7;
     grid-column: 5 / 9;
     justify-self: center;
     align-self: center;
     padding: 0 2em 0 2em;
-}
-
-
-.info {
-    width: 40%;
-    height: auto;
-    background-color: floralwhite;
-    margin-bottom: 4em;
-   
-    
-}
-.info img {
-    width: 100%;
-    border-radius: 3%;
-}
-.info p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 24px;
-    line-height: 1.8;
 }
 
 .word-cloud {
@@ -202,7 +183,44 @@ p::first-letter {
     height: 100%;
     object-fit: cover;
 }
+/* ---------------------------------
+    Music general page 
+-----------------------------------*/
 
+#music-wrapper {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto auto auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+#music-statement {
+    grid-column: 1 / 9;
+    grid-row: 1 / 2;
+    text-align: center;
+    
+    position: relative;  
+}
+#music-statement p {
+    font-family: 'Tulpen One', cursive;
+    font-size: 2em;
+}
+#music-statement p::before {
+    content: open-quote;
+    font-size: 800%;
+    position: absolute;
+    top: .25em;
+    left: .50em;
+    color: crimson;
+}
+video {
+    grid-column: 2 / 8;
+    grid-row: 2 / 3;
+    width: 100%;
+    max-height: 100%;
+}
 
 footer {
     background-color: rgb(12, 12, 11);
