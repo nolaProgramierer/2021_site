@@ -8,6 +8,9 @@ body {
 /* -----------------------------------------------
     Header
 -------------------------------------------------*/
+header {
+    font-family: 'Source Sans Pro', sans-serif;
+}
 .banner-wrapper {
     height: 100vh;
     background-image: url(../images/music/gl-laying-down.jpg);
@@ -29,24 +32,26 @@ body {
    display: flex;
 }
 .logo {
-    width: 50%;
+    width: 30%;
     color: white;
     margin-left: 3em;
+    font-size: 2em;
 }
 .menu-wrapper nav {
-    width: 50%;  
+    width: 70%;  
 }
 .menu-wrapper nav ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+    justify-content: space-around;
+    margin-left: 20%;
     
 }
 .menu-wrapper li a {
     color: #fff;
     text-decoration: none;
-    font-family: roboto;
-    font-size: 16px;
+    font-size: 1.25em;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline 0.15em rgba(255, 255, 255, 0);
