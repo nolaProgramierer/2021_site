@@ -221,6 +221,23 @@ video {
     width: 100%;
     max-height: 100%;
 }
+#music-wrapper h2 {
+    grid-column: 1 / 9;
+    grid-row: 3 /4;
+    text-align: center;
+}
+#bio-section1 p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 1em 0 0 2em;
+}
+#bio-section1 img {
+    float: right;
+    margin-left: 1em;
+    margin-right: 2em;  
+}
+
 
 footer {
     background-color: rgb(12, 12, 11);
