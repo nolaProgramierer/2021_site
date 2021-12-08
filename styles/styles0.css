@@ -72,9 +72,9 @@ header {
 /*---------------------------------------
 ----------------------------------------*/
 .home-statement {
-    font-size: 2em;
+    font-size: 1.75em;
     margin: 0 15%;
-    line-height: 1.6;
+    line-height: 1.25;
     position: relative;
 }
 .home-statement p {
@@ -82,14 +82,16 @@ header {
     font-size: 2em;
     margin-top: 100px;
 }
+/*
 .home-statement p::before {
     content: open-quote;
     font-size: 800%;
     position: absolute;
-    top: -.5em;
+    top: 1em;
     left: -.2em;
     color: crimson;
 }
+*/
 .section-headline {
     font-size: 60px;
     font-family:  bignoodletitling;
@@ -132,6 +134,8 @@ p::first-letter {
    grid-row: 2 / 3;
    grid-column: 1 / 5;
    justify-self: center;
+   position: relative;
+   
 }
 #music-tease {
     grid-row: 2 / 3;
@@ -232,10 +236,10 @@ video {
     line-height: 1.5em;
     padding: 1em 0 0 2em;
 }
-#bio-section1 img {
+#caras-img {
     float: right;
     margin-left: 1em;
-    margin-right: 2em;  
+    margin-right: 2em;
 }
 
 
