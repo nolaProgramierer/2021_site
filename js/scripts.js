@@ -1,5 +1,7 @@
 window.addEventListener("DOMContentLoaded", function () {
 
+
+    // Navbar appearance
     let navbar = document.querySelector(".nav-wrapper");
     // return original scrollY value
     let scroll = window.scrollY;
@@ -23,5 +25,21 @@ window.addEventListener("DOMContentLoaded", function () {
         // on each scroll event reset beginning scroll position to current y offset
         scroll = scrolled;
     });
+
+    //Mouseover image effect
+    document.querySelectorAll(".article-img").forEach(function (img) {
+      img.addEventListener("mouseover", function () {
+        this.style.opacity = "1";
+        console.log("Image opacity to '1'");
+      });
+    });
+
+    document.querySelectorAll(".article-img").forEach(function (img) {
+        img.addEventListener("mouseout", function () {
+          this.style.opacity = ".9";
+          console.log("Image opacity to '.9'");
+        });
+      });
+
     console.log("DOM Content loaded and parsed")
 });

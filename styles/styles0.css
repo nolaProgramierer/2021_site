@@ -125,25 +125,25 @@ p::first-letter {
 #info-grid-container img { 
     max-width: 100%; 
     box-shadow: 10px 5px 5px gray;
+    opacity: .9;
 }
 #music-heading {
     grid-row: 1 / 2;
     grid-column: 1 / 9;
 }
-#stair-img {
+#article1 {
    grid-row: 2 / 3;
    grid-column: 1 / 5;
    justify-self: center;
-   position: relative;
-   
 }
-#music-tease {
+#article1-stmt {
     grid-row: 2 / 3;
     grid-column: 5 / 9;
     justify-self: center;
     align-self: center;
     padding: 0 2em 0 2em;
 }
+
 #design-heading {
     grid-row: 3 / 4;
     grid-column: 1 / 9;
