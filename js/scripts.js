@@ -26,20 +26,70 @@ window.addEventListener("DOMContentLoaded", function () {
         scroll = scrolled;
     });
 
-    //Mouseover image effect
+    //Mouseover image effect on index page
     document.querySelectorAll(".article-img").forEach(function (img) {
       img.addEventListener("mouseover", function () {
+        this.style.transition = "opacity 1s";
         this.style.opacity = "1";
+        
         console.log("Image opacity to '1'");
       });
     });
 
     document.querySelectorAll(".article-img").forEach(function (img) {
         img.addEventListener("mouseout", function () {
-          this.style.opacity = ".9";
+            this.style.transition = "opacity 1s";
+            this.style.opacity = ".9";
           console.log("Image opacity to '.9'");
         });
       });
+
+      document.querySelectorAll(".article-stmts").forEach(function (img) {
+        img.addEventListener("mouseover", function (e) {
+          e.target.style.transition = "opacity 1s";
+          e.target.style.opacity = "1";
+          
+          console.log("Image opacity to '1'");
+        });
+      });
+  
+      document.querySelectorAll(".article-stmts").forEach(function (img) {
+          img.addEventListener("mouseout", function () {
+              this.style.transition = "opacity 1s";
+              this.style.opacity = ".9";
+            console.log("Image opacity to '.9'");
+          });
+        });
+
+    if (document.querySelector("#info-grid-container")) {
+        // Show hide button link to other pages from articles
+    document.querySelector("#article1-stmt").addEventListener("mouseover", function () {
+        document.querySelector("#article1-link").style.transition = "opacity 1s";
+        document.querySelector("#article1-link").style.opacity = "1";
+    });
+    document.querySelector("#article1-stmt").addEventListener("mouseout", function () {
+        document.querySelector("#article1-link").style.transition = "opacity 1s";
+        document.querySelector("#article1-link").style.opacity = "0";
+    });
+    document.querySelector("#prog-tease").addEventListener("mouseover", function () {
+        document.querySelector("#article2-link").style.transition = "opacity 1s";
+        document.querySelector("#article2-link").style.opacity = "1";
+    });
+    document.querySelector("#prog-tease").addEventListener("mouseout", function () {
+        document.querySelector("#article2-link").style.transition = "opacity 1s";
+        document.querySelector("#article2-link").style.opacity = "0";
+    });
+    document.querySelector("#farm-tease").addEventListener("mouseover", function () {
+        document.querySelector("#article3-link").style.transition = "opacity 1s";
+        document.querySelector("#article3-link").style.opacity = "1";
+    });
+    document.querySelector("#farm-tease").addEventListener("mouseout", function () {
+        document.querySelector("#article3-link").style.transition = "opacity 1s";
+        document.querySelector("#article3-link").style.opacity = "0";
+        console.log("Mouse out");
+    });
+    }
+      
 
     console.log("DOM Content loaded and parsed")
 });
