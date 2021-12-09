@@ -197,57 +197,56 @@ p::first-letter {
 /* ---------------------------------
     Music general page 
 -----------------------------------*/
-
-#music-wrapper {
-    margin-top: 200px;
+#music-page-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    margin-top: 150px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5em;
     line-height: 1.5em;
 }
-#music-statement {
-    grid-column: 1 / 9;
+#wpb-img-div {
     grid-row: 1 / 2;
-    text-align: center;
-    
-    position: relative;  
+    grid-column: 1 / 4;
+}
+#wpb-img-div img {
+    max-width: 100%;
+}
+#music-bio1 {
+    grid-row: 1 / 2;
+    grid-column: 4 / 9;
+}
+#music-bio2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 9;
+}
+#music-bio1 p {
+    padding: 1em 1em 1em 2em;
+}
+#music-statement {
+   grid-row: 3 / 4;
+   grid-column: 1 / 4; 
 }
 #music-statement p {
     font-family: 'Tulpen One', cursive;
     font-size: 2em;
 }
-#music-statement p::before {
-    content: open-quote;
-    font-size: 800%;
-    position: absolute;
-    top: .25em;
-    left: .50em;
-    color: crimson;
+#nutcracker-video {
+    grid-row: 3 / 4;
+    grid-column: 4 / 9;
 }
 video {
-    grid-column: 2 / 8;
-    grid-row: 2 / 3;
     width: 100%;
     max-height: 100%;
 }
-#music-wrapper h2 {
+#piano-heading {
     grid-column: 1 / 9;
-    grid-row: 3 /4;
+    grid-row: 4 / 5;
     text-align: center;
 }
-#bio-section1 p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    padding: 1em 0 0 2em;
-}
-#caras-img {
-    float: right;
-    margin-left: 1em;
-    margin-right: 2em;
-}
+
+
 
 
 footer {

@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", function () {
         this.style.transition = "opacity 1s";
         this.style.transition = "transform 1s ease";
         this.style.opacity = "1";
-        this.style.transform = "scale(1.05)";
+        this.style.transform = "scale(1.02)";
         
         console.log("Image opacity to '1'");
       });
