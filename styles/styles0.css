@@ -125,12 +125,11 @@ p::first-letter {
 #info-grid-container img { 
     max-width: 100%; 
     box-shadow: 10px 5px 5px gray;
-    opacity: .9;
+    opacity: .85;
 }
 .more-info {
     text-decoration: none;
-    font-size: 1.25em;
-    color: rgb(110, 109, 109);
+    color:crimson;
     opacity: 0;
 }
 #article1-link {

@@ -35,7 +35,6 @@ window.addEventListener("DOMContentLoaded", function () {
         console.log("Image opacity to '1'");
       });
     });
-
     document.querySelectorAll(".article-img").forEach(function (img) {
         img.addEventListener("mouseout", function () {
             this.style.transition = "opacity 1s";
@@ -43,7 +42,6 @@ window.addEventListener("DOMContentLoaded", function () {
           console.log("Image opacity to '.9'");
         });
       });
-
       document.querySelectorAll(".article-stmts").forEach(function (img) {
         img.addEventListener("mouseover", function (e) {
           e.target.style.transition = "opacity 1s";
@@ -52,7 +50,6 @@ window.addEventListener("DOMContentLoaded", function () {
           console.log("Image opacity to '1'");
         });
       });
-  
       document.querySelectorAll(".article-stmts").forEach(function (img) {
           img.addEventListener("mouseout", function () {
               this.style.transition = "opacity 1s";
@@ -61,6 +58,8 @@ window.addEventListener("DOMContentLoaded", function () {
           });
         });
 
+
+    // Prevent null error on page other than home page
     if (document.querySelector("#info-grid-container")) {
         // Show hide button link to other pages from articles
     document.querySelector("#article1-stmt").addEventListener("mouseover", function () {
