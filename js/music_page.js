@@ -6,7 +6,7 @@ $(document).ready(function () {
         file: "https://gl-music-site.s3.amazonaws.com/videos/stravinsky_etude4.mp4",
         // Player instance options
         responsive: true,
-        width: "50%",
+        width: "100%",
         aspectratio: "16:9",
         controls: true,
         image: "images/stravinsky_etude-poster.png",
