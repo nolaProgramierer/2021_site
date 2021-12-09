@@ -4,13 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>Glenn Langdon home page</title>
+        <title>Music</title>
         <link href="styles/styles0.css" rel="stylesheet">
         <!--Google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Tulpen+One&display=swap" rel="stylesheet">
+        <!--Link and scripts for jQuery-->
+        <script type="text/javascript" src="https://cdn.jwplayer.com/libraries/uWGJtys0.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/music_page.js" type="text/javascript"></script>
+        <!--Script for all other pages-->
         <script src="js/scripts.js"></script>
+        <!--Bootstrap cdn-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
         <header class="nav-wrapper">         
@@ -53,6 +61,59 @@
 
                 <h2 id="piano-heading">At the piano</h2>
                     
+        </div>
+
+
+        <div class="container">
+            <h1 class="text-center">2:15 in F# major</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-6" id="videoDiv">
+                </div>
+                <div class="col-md-6" id="bio">
+                    <h4 class="text-center">About this app</h4>
+                    <p>The programmer has taken a video of a portion of a piano recital he gave in New York City.
+                        The video is hosted on AWS and is played on an instance of JWPlayer. According to the viewers
+                        perferences, the video can be viewed by itself or with the music shown.</p>
+                    <p>If the viewer wishes to view the music as the video plays, checkboxes allow the viewer to
+                        choose the extent to which the music played on the video is shown. The music can be followed
+                        in brief slides and with an overlay highlighting the portion of the slide being played can be shown.
+                        The speed with which the overlay traverses the slides is determined by the duration of the music
+                        which
+                        was determined to the 6th decimal point by a custom function used to capture each slide's duration
+                        with respect to the music being played. The pages of the larger music score change according to
+                        the video. A measure counter for the music being displayed is also available by checkbox.</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="form-check col-md-12">
+                    <input class="form-check-input" type="checkbox" id="show-music" name="show-music" value="">
+                    <label class="form-check-label" for="show-music"> Would you like to follow along with the music?
+                    </label>
+                </div>
+    
+                <div class="form-check col-md-12">
+                    <input class="form-check-input" type="checkbox" id="show-overlay" name="show-overlay" value="">
+                    <label class="form-check-label" for="show-overlay"> Would you like help in following the music?</label>
+                </div>
+    
+                <div class="form-check col-md-12">
+                    <input class="form-check-input" type="checkbox" id="bar-counter" name="bar-counter" value="">
+                    <label class="form-check-label" for="bar-counter"> Would you like to count the measures?</label>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-8" id="slides">
+                    <!--Add overlay div here-->
+                    <img class="img-thumbnail" src="images/music/etude_01.png" alt=" Measure of Etude">
+                </div>
+                <div class="col-md-4">
+                    <div id="ms-counter"></div>
+                    <img src="images/music/Etude_4_1.png" class="img-fluid" id="music-page" alt="music page">
+                </div>
+            </div>
         </div>
                 
       

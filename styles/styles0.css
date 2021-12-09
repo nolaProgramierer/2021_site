@@ -246,6 +246,45 @@ video {
     text-align: center;
 }
 
+/* ---------------------------------
+    Styling for Stravinsky piano
+-----------------------------------*/
+
+#slides {
+    height: 175px;
+    width: 640px;
+    border: 1px solid black;
+    margin-top: 20px;
+    visibility: hidden;
+    box-shadow: 5px 10px #888888;
+    position: relative;
+    z-index: 1;
+    /* Prevent overlay from going outside of parent div */
+    overflow: hidden;
+}
+img {
+    z-index: 2;
+}
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 0px;
+    z-index: 3;
+    background-color: yellow;
+    display: block;
+    opacity: 0.25;
+}
+#ms-counter {
+    font-size: 1.25rem;
+    visibility: hidden;
+    color: red;
+}
+#music-page {
+    border: 1px solid black;
+    visibility: hidden;
+    box-shadow: 5px 10px #888888;
+}
 
 
 
