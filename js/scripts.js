@@ -30,7 +30,9 @@ window.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".article-img").forEach(function (img) {
       img.addEventListener("mouseover", function () {
         this.style.transition = "opacity 1s";
+        this.style.transition = "transform 1s ease";
         this.style.opacity = "1";
+        this.style.transform = "scale(1.05)";
         
         console.log("Image opacity to '1'");
       });
@@ -38,7 +40,9 @@ window.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".article-img").forEach(function (img) {
         img.addEventListener("mouseout", function () {
             this.style.transition = "opacity 1s";
+            this.style.transition = "transform 1s ease";
             this.style.opacity = ".9";
+            this.style.transform = "scale(1)";
           console.log("Image opacity to '.9'");
         });
       });
