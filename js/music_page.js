@@ -77,7 +77,7 @@ $(document).ready(function () {
                 // Add music slide png if not same as existing slide
                 if (currentBars != i) {
                     // Add corresponding music slide to HTML
-                    $("#slides").html(`<img class="img-fluid" src=${etude.bars[i].slide}>`);
+                    $("#slides").html(`<img src=${etude.bars[i].slide}>`);
                     // Reset slide number
                     currentBars = i;
                     // Look for changes in 'slides' div
@@ -102,11 +102,13 @@ $(document).ready(function () {
     showMusic();
     // Show measure counter on checkbox
     showMeasures();
+    // Show view options on mouseover of Stravinsky video
+    showVideoOptions();
 
 });// End ready
 
 
-// Function to show page on which excert is playing
+// Function to show page on which excerpt is playing
 // Check measure properties of object while player is playing
 function turnPage(objProp) {
     if (objProp === 11) {
@@ -219,4 +221,15 @@ function moveOverlay(speed) {
     );
 }
 
-
+// Show view options on mouseover of stravinsky video
+// View options fade in via transition effect
+function showVideoOptions() {
+    var vidDiv = document.querySelector("#video-container");
+    var vidOptions = document.querySelector("#view-options ul");
+    vidDiv.addEventListener("mouseover", function () {
+       vidOptions.style.visibility = "visible";
+       vidOptions.style.transition = "opacity 1.5s";
+       vidOptions.style.opacity = "1";
+       console.log("Vid options");
+    });
+}

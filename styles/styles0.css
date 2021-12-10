@@ -200,7 +200,7 @@ p::first-letter {
 #music-page-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto auto auto auto auto auto 300px auto;
+    grid-template-rows: auto auto auto auto auto auto 300px auto auto;
     margin-top: 150px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5em;
@@ -257,7 +257,7 @@ video {
     grid-row: 6 / 7;
     grid-column: 1 / 9;
 }
-#videoDiv {
+#video-container {
    grid-row: 7 / 8;
    grid-column: 1 / 4;
 }
@@ -272,6 +272,24 @@ video {
 }
 #view-options ul {
     list-style-type: none;
+    visibility: hidden;
+    opacity: 0;
+}
+#slides {
+    grid-row: 9 / 10;
+    grid-column: 1 / 6;
+}
+#slides img {
+    max-width: 100%;
+    height: auto;
+}
+#music-pages {
+    grid-row: 9 / 10;
+    grid-column: 6 / 8;
+}
+#music-pages img {
+    max-width: 100%;
+    height: auto;
 }
 
 
