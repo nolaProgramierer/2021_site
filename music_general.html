@@ -59,7 +59,8 @@
                     <source src="/video/LPO_Nut_roughcut.mp4" type="video/mp4" poster="/images/music/Nut_thumbnail.jpg">
                 </video>
 
-                <h2 id="piano-heading">At the piano</h2>
+                <h1 id="article-heading">At the piano</h1>
+                <h2 id="article-title">2:18 in F# major</h2> 
                 <div id="videoDiv">
                 </div>
                 <div id="stravinsky-info">
@@ -76,6 +77,19 @@
                         with respect to the music being played. The pages of the larger music score change according to
                         the video. A measure counter for the music being displayed is also available by checkbox.</p>
                 </div>
+                <div id="view-options">
+                    <ul>
+                        <li><input type="checkbox" id="show-music" name="show-music" value="">
+                            <label for="show-music">Would you like to follow along with the music?</label>
+                        </li>
+                        <li><input type="checkbox" id="show-overlay" name="show-overlay" value="">
+                            <label for="show-overlay">Would you like help in following the music?</label>
+                        </li>
+                        <li><input type="checkbox" id="bar-counter" name="bar-counter" value="">
+                            <label for="bar-counter">Would you like to count the measures?</label>
+                        </li>
+                    </ul>                
+                </div>
                     
         </div>
 
@@ -83,23 +97,7 @@
         <div class="container">
             
     
-            <div class="row">
-                <div class="form-check col-md-12">
-                    <input class="form-check-input" type="checkbox" id="show-music" name="show-music" value="">
-                    <label class="form-check-label" for="show-music"> Would you like to follow along with the music?
-                    </label>
-                </div>
-    
-                <div class="form-check col-md-12">
-                    <input class="form-check-input" type="checkbox" id="show-overlay" name="show-overlay" value="">
-                    <label class="form-check-label" for="show-overlay"> Would you like help in following the music?</label>
-                </div>
-    
-                <div class="form-check col-md-12">
-                    <input class="form-check-input" type="checkbox" id="bar-counter" name="bar-counter" value="">
-                    <label class="form-check-label" for="bar-counter"> Would you like to count the measures?</label>
-                </div>
-            </div>
+           
     
             <div class="row">
                 <div class="col-md-8" id="slides">
