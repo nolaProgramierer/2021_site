@@ -200,7 +200,7 @@ p::first-letter {
 #music-page-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto auto auto auto auto auto 300px auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
     margin-top: 150px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5em;
@@ -209,24 +209,34 @@ p::first-letter {
 #wpb-img-div {
     grid-row: 1 / 2;
     grid-column: 1 / 4;
+    padding-left: 2em;
 }
 #wpb-img-div img {
     max-width: 100%;
+    box-shadow: 10px 5px 5px gray;
 }
 #music-bio1 {
     grid-row: 1 / 2;
     grid-column: 4 / 9;
+    padding: 0 1em 0 1em;
 }
 #music-bio2 {
     grid-row: 2 / 3;
     grid-column: 1 / 9;
+    padding: 0 2em 0 2em;
 }
 #music-bio1 p {
     padding: 1em 1em 1em 2em;
 }
 #music-statement {
    grid-row: 3 / 4;
-   grid-column: 1 / 4; 
+   grid-column: 1 / 4;
+   align-self: center;
+}
+#music-statement p {
+    padding: 0 1.5em 0 1.5em;
+    line-height: 1.5;
+    text-align: center;
 }
 #music-statement p {
     font-family: 'Tulpen One', cursive;
@@ -234,11 +244,12 @@ p::first-letter {
 }
 #nutcracker-video {
     grid-row: 3 / 4;
-    grid-column: 4 / 9;
+    grid-column: 4 / 8;   
 }
 video {
     width: 100%;
     max-height: 100%;
+    box-shadow: 10px 5px 5px gray;
 }
 #piano-heading {
     grid-column: 1 / 9;
@@ -249,62 +260,75 @@ video {
 /* ---------------------------------
     Styling for Stravinsky piano
 -----------------------------------*/
-#article-heading {
-    grid-row: 5 / 6;
-    grid-column: 1 / 9;
-}
+
 #article-title {
-    grid-row: 6 / 7;
+    grid-row: 4 / 5;
     grid-column: 1 / 9;
+    justify-self: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
 #video-container {
-   grid-row: 7 / 8;
-   grid-column: 1 / 4;
+   grid-row: 5 / 6;
+   grid-column: 1 / 5;
+   padding-left: 3em;
 }
 #stravinsky-info {
-    grid-row: 7 / 8;
-    grid-column: 5 / 9; 
+    grid-row: 5 / 6;
+    grid-column: 5 / 9;
+    padding-right: 2em;
+    padding-left: 1em; 
 }
 #view-options {
-    grid-row: 8 / 9;
+    grid-row: 6 / 7;
     grid-column: 1 / 4;
     font-size: .75em;
+    padding-left: .5em;
 }
 #view-options ul {
     list-style-type: none;
     visibility: hidden;
     opacity: 0;
 }
+#ms-counter {
+    grid-row: 6 / 7;
+    grid-column: 4 / 6;
+    align-self: end;
+}
 #slides {
-    grid-row: 9 / 10;
+    grid-row: 7 / 8;
     grid-column: 1 / 6;
 }
 #slides img {
     max-width: 100%;
     height: auto;
+    padding-left: 1em;
 }
 #music-pages {
-    grid-row: 9 / 10;
-    grid-column: 6 / 8;
+    grid-row: 6 / 8;
+    grid-column: 6 / 9;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 #music-pages img {
     max-width: 100%;
     height: auto;
 }
-
-
-
 #slides {
-    height: 175px;
+    /*height: 175px;
     width: 640px;
     border: 1px solid black;
-    margin-top: 20px;
+    */
+    margin: 20px 0 10px 15px;
     visibility: hidden;
-    box-shadow: 5px 10px #888888;
+    box-shadow: 8px 10px #888888;
     position: relative;
     z-index: 1;
     /* Prevent overlay from going outside of parent div */
     overflow: hidden;
+}
+#slides img {
+    border: 1px solid black; 
 }
 img {
     z-index: 2;
@@ -320,9 +344,8 @@ img {
     opacity: 0.25;
 }
 #ms-counter {
-    font-size: 1.25rem;
     visibility: hidden;
-    color: red;
+    font-size: .75em;
 }
 #music-page {
     border: 1px solid black;
