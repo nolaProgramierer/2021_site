@@ -103,12 +103,12 @@ header {
     font-size: 18px;
     line-height: 1.8;
 }
-/*
-p::first-letter {
+
+#info-grid-container p::first-letter {
     font-size: 300%;
     color: crimson;
 }
-*/
+
 #info-grid-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -206,6 +206,12 @@ p::first-letter {
     font-size: 1.5em;
     line-height: 1.5em;
 }
+#music-page-container p::first-letter {
+    font-size: 300%;
+    color: crimson;
+}
+    
+
 #wpb-img-div {
     grid-row: 1 / 2;
     grid-column: 1 / 4;
@@ -233,12 +239,10 @@ p::first-letter {
    grid-column: 1 / 4;
    align-self: center;
 }
-#music-statement p {
+#music-statement  {
     padding: 0 1.5em 0 1.5em;
     line-height: 1.5;
     text-align: center;
-}
-#music-statement p {
     font-family: 'Tulpen One', cursive;
     font-size: 2em;
 }
@@ -353,7 +357,15 @@ img {
     box-shadow: 5px 10px #888888;
 }
 
+/* ---------------------------------
 
+    Touring page
+
+------------------------------------*/
+
+main {
+    margin-top: 100px;
+}
 
 footer {
     background-color: rgb(12, 12, 11);
