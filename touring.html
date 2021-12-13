@@ -4,14 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>Glenn Langdon home page</title>
+        <title>Phantom Tour</title>
         <link href="styles/styles0.css" rel="stylesheet">
         <!--Google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Tulpen+One&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/56c133eebb.js" crossorigin="anonymous"></script>
+        <!--Leaflet library CSS stylesheet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
         <script src="js/scripts.js"></script>
+        <!--Dataset set from -->
+        <script src="js/phantom_cities.js"></script>
+
     </head>
     <body>
                  
@@ -22,7 +29,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="music_general.html">Music</a></li>
-                        <li><a href="#">Digital Design</a></li>
+                        <li><a href="dgmd.html">Digital Design</a></li>
                         <li><a href="#">Farming</a></li>
                         <li><a href="#">Contact</a></li>                     
                     </ul>    
@@ -30,11 +37,76 @@
             </div>   
         </header>
         <div id="touring-container">
-            <main>
-                Hello there
 
-            </main>
-            
-        </div>    
+            <div id="page-desc">
+                <h1>Phantom of the Opera</h1>
+                
+            </div>
+            <div id="phantom-img-wrapper"><!--Phantom img goes here--></div>         
+            <!--Container for map object-->
+            <div id="map"></div>
+            <div id="music-box-heading">
+                <h2>Music Box Company, 1993-2010</h2>
+            </div>
+            <div id="touring-copy1">
+                <p> Having been Music Director of this production for 14 years, if you saw the show in one of these cities, you would have more than likely have seen me in the pit.  This production of the Phantom began in Seattle in 1993 and ended in Los Angeles in 2010.  I left the production in 2008 after having conducted thousands upon thousands of performances before hundreds of thousand of theater-goers.</p>
+            </div>
+            <div id="touring-copy2">
+                <p>
+                    When the tour started the minimum stay in each city was 6 ¾ weeks.  In one city, Salt Lake City, the first time we visited we played for 4 months.  As the years passed, and as we returned to cities multiple times, the stays shortened but not less than 4 weeks.  Occasional relocation for those of us on the road.  It was a tour the likes of which will not be repeated.  
+                </p>
+            </div>
+            <div class="tour-img article-img" id="pit-fog-img">
+                <img src="images/music/gl_masq_fog_300x439.jpg" alt="Fog in pit">
+            </div>
+            <div class="tour-img article-img" id="masq-still-img">
+                <img src="images/music/masqstill_350x228.jpg" alt="conductor in pit">
+            </div>
+            <div id="touring-copy3">
+                <p>The name of the company, the Music Box, is taken from the music box shown to Raoul, the Vicomte de Chagny, in the opening minutes of the musical.  Since at one point, there were 12 companies of Phantom operating, each company was bestowed a unique name.  </p>
+            </div>             
+        </div>
+
+
+        <!--Leaflet JS library -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+        </script>
+        <script>
+            // Set map view; centered over US
+            var mapLatLong = [39.8283, -98.5795]
+            // Zoom level of map
+            var zoom = 4;
+            // Initialize the map
+            var map = L.map('map').setView(mapLatLong, zoom);
+            // Required map attribution
+            var mapAttribution = '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors' +
+            ', Tiles courtesy of <a href="https://geo6.be/">GEO-6</a>';
+
+            // Open baselayer w/ attribution
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: mapAttribution}).addTo(map);
+            // Show scale bar on map
+            L.control.scale({imperial: true, metric: true}).addTo(map);
+        
+        // For each entry in json object, extract applicable data        
+        for (let i = 0; i < tourCities.length; i ++) {
+                showCities(tourCities[i]);
+        }
+
+            function showCities(city) {
+                // Add each city's lat & lng to array
+                let arr = [];       
+                arr.push(city.lat);
+                arr.push(city.lng);
+                console.log(arr)
+                // add location marker to map
+                let marker = L.marker(arr).addTo(map);
+                let desc = `${city.city}, ${city.state_id}`;
+                // Bind a popup to a marker
+                let popup = marker.bindPopup(desc);       
+            }
+        </script>           
     </body>
 </html>

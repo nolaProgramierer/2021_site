@@ -3,8 +3,6 @@ body {
     padding: 0;
     
 }
-
-
 /* -----------------------------------------------
     Header
 -------------------------------------------------*/
@@ -16,6 +14,7 @@ header {
     background-image: url(../images/music/gl-laying-down.jpg);
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
 }
 .nav-wrapper {
     position: fixed;
@@ -103,12 +102,10 @@ header {
     font-size: 18px;
     line-height: 1.8;
 }
-
 #info-grid-container p::first-letter {
     font-size: 300%;
     color: crimson;
 }
-
 #info-grid-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -183,7 +180,6 @@ header {
     align-self: center;
     padding: 0 2em 0 2em;
 }
-
 .word-cloud {
     display: grid;
     grid-template-columns: 1fr;
@@ -210,8 +206,6 @@ header {
     font-size: 300%;
     color: crimson;
 }
-    
-
 #wpb-img-div {
     grid-row: 1 / 2;
     grid-column: 1 / 4;
@@ -271,6 +265,7 @@ video {
     justify-self: center;
     padding-top: 2em;
     padding-bottom: 1em;
+    color: crimson;
 }
 #video-container {
    grid-row: 5 / 6;
@@ -362,12 +357,87 @@ img {
     Touring page
 
 ------------------------------------*/
-
-main {
-    margin-top: 100px;
+#touring-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto auto auto auto auto auto auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
 }
+#touring-container p {
+    line-height: 1.5em;
+}
+#touring-container p::first-letter {
+    font-size: 200%;
+    color: crimson;
+}
+.tour-img  img {
+    box-shadow: 10px 5px 5px gray;
+    opacity: .85;
+    max-width: 100%;
+}
+#page-desc {
+    grid-row: 1 / 2;
+    grid-column: 1 / 9;
+    justify-self: center;
+    margin-top: 100px;
+}  
+#phantom-img-wrapper {
+    grid-row: 2 / 3;
+    grid-column: 1 / 9;
+    height: 50vh;
+    background-image: url(../images/music/POTO-5th-Anniversary-Pic_1200x529.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#music-box-heading {
+    grid-row: 3 / 4;
+    grid-column: 1 / 9;
+    justify-self: center;
+}
+#map {
+    grid-row: 4 / 5;
+    grid-column: 1 / 5;
+    height: 40vh;
+    width: 50vw;
+    margin-left: 2em; 
+}
+#touring-copy1 {
+    grid-row: 4 / 5;
+    grid-column: 5 / 9;
+    align-self: center;
+    padding: 0 1em 0 1em;
+}
+#touring-copy2 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 5;
+    align-self: center;
+}
+#pit-fog-img {
+    grid-row: 5 / 6;
+    grid-column: 6 / 9;
+}
+#masq-still-img {
+    grid-row: 6 / 7;
+    grid-column: 1 / 5;
+    width: 100%;
+    margin-left: 2em;
+}
+#touring-copy3 {
+    grid-row: 6 / 7;
+    grid-column: 5 / 9;
+    align-self: center;
+}
+
+/* ------------------------------------
+    Digital Media page
+---------------------------------------*/
+
+
 
 footer {
     background-color: rgb(12, 12, 11);
-    height: 300px;
+    height: 200px;
 }
