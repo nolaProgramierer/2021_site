@@ -4,54 +4,72 @@ body {
 #dgmd-container {
   margin-top: 90px;
   color: white;
-  background-color: background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+  background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
 }
 #welcome-container {
   font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
-  color: white; }
+  color: white; 
+}
 
 #code-bckgrd {
   height: 800px;
   width: 100%;
   background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
-  position: relative; }
+  position: relative; 
+}
 
 /* typography */
 #code {
-  margin-left: 30px; }
-  @media (min-width: 400px) {
-    #code {
-      font-size: .9em; } }
-  @media (min-width: 800px) {
-    #code {
-      font-size: 1.2em; } }
-  @media (min-width: 1200px) {
-    #code {
-      font-size: 1.4em; } }
-
+  margin-left: 30px; 
+}
+@media (min-width: 400px) {
+  #code {
+    font-size: .9em; 
+  } 
+}
+@media (min-width: 800px) {
+  #code {
+    font-size: 1.2em; 
+  } 
+}
+@media (min-width: 1200px) {
+  #code {
+    font-size: 1.4em; 
+  } 
+}
 @media (min-width: 400px) {
   #code-list {
-    font-size: 1.25em; } }
+    font-size: 1.25em; 
+  } 
+}
 @media (min-width: 800px) {
   #code-list {
-    font-size: 1.9em; } }
+    font-size: 1.9em; 
+  } 
+}
 @media (min-width: 1200px) {
   #code-list {
-    font-size: 2.3em; } }
-
+    font-size: 2.3em; 
+  } 
+}
 #code-output ul {
-  list-style: none; }
-
+  list-style: none; 
+}
 #code-list li:last-child {
   color: grey;
-  font-size: 60%; }
+  font-size: 60%; 
+}
 #code-list li:nth-child(2) a, #code-list li:nth-child(3) a, #code-list li:nth-child(5) a {
   color: #c2c2c2;
-  text-decoration: none; }
-  #code-list li:nth-child(2) a:hover, #code-list li:nth-child(3) a:hover, #code-list li:nth-child(5) a:hover {
-    text-decoration: none;
-    color: inherit; }
-
+  text-decoration: none; 
+}
+#code-list li:nth-child(2) a:hover, #code-list li:nth-child(3) a:hover, #code-list li:nth-child(5) a:hover {
+  text-decoration: none;
+  color: inherit; 
+}
+#code-list {
+  text-align: end;
+}
 #code-list
 .articles-section {
   font-family: "Merriweather", serif;
@@ -60,83 +78,86 @@ body {
   line-height: 1.4em;
   color: #3A4145;
   font-weight: 300;
-  padding-top: 20px; }
-  #code-list
-  .articles-section a {
-    color: inherit; }
-    #code-list
-    .articles-section a:hover {
-      text-decoration: none;
-      color: darkgray; }
-  #code-list
-  .articles-section h1 {
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-    color: #3A4145; }
+  padding-top: 20px;
+}
+#code-list
+.articles-section a {
+  color: inherit; 
+}
+#code-list
+.articles-section a:hover {
+  text-decoration: none;
+  color: darkgray; 
+}
+#code-list
+.articles-section h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #3A4145; 
+}
 
 .article-created-time {
   color: #c2c2c2;
   font-size: 1.4rem;
-  font-family: "Raleway", sans-serif; }
-
+  font-family: "Raleway", sans-serif; 
+}
 /*  code colors */
 #ruby-code {
-  color: white; }
-
+  color: white; 
+}
 .ruby-code {
-  color: DeepSkyBlue; }
-
+  color: DeepSkyBlue; 
+}
 .attributes {
-  color: SandyBrown; }
-
+  color: SandyBrown; 
+}
 .class {
-  color: LightYellow; }
-
+  color: LightYellow; 
+}
 #class {
-  text-decoration: underline; }
-
+  text-decoration: underline; 
+}
 .code-vars {
-  color: LightGrey; }
-
+  color: LightGrey; 
+}
 .string {
-  color: yellow; }
-
+  color: yellow; 
+}
 .string-instance {
-  color: DimGray; }
-
+  color: DimGray; 
+}
 .first-indent {
-  margin-left: 10px; }
-
+  margin-left: 10px; 
+}
 .second-indent {
-  margin-left: 20px; }
-
+  margin-left: 20px; 
+}
 #code-output {
   position: absolute;
   /*top: 330px;*/
   top: 65%;
   /*right: 50px;*/
-  right: 2.5%; }
-
+  right: 2.5%;
+}
+/* Add chevron with content */
+/*
 .chevron::before {
   border-style: solid;
   border-width: 0.15em 0.15em 0 0;
   content: '';
   display: inline-block;
-  /*height: 0.45em;*/
   height: 2em;
   left: 50%;
-  position: absolute;
-  /*top: 0.15em;*/
+  position: absolute; 
   transform: rotate(-45deg);
   vertical-align: top;
-  /*width: 0.45em;*/
-  width: 2em; }
-
+  width: 2em; 
+}
 .chevron.bottom:before {
   top: 40%;
-  transform: rotate(135deg); }
-
+  transform: rotate(135deg); 
+}
 #chevron-pointer > a {
-  color: darkgray; }
-
-/*# sourceMappingURL=dgmd.css.map */
+  color: darkgray; 
+}
+*/
