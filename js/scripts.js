@@ -94,5 +94,12 @@ window.addEventListener("DOMContentLoaded", function () {
     }
       
 
+    // Highlight navbar link for current page
+    document.querySelectorAll("nav a").forEach(function (a) {
+        if (a.href == document.URL) {      
+            a.parentElement.classList.add("active");
+        }
+    });
+
     console.log("DOM Content loaded and parsed")
 });

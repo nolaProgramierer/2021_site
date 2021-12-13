@@ -68,6 +68,10 @@ header {
     top: 0;
     z-index: 100;
 }
+.active {
+   font-style: italic;
+   opacity: .8;
+}
 /*---------------------------------------
 ----------------------------------------*/
 .home-statement {
