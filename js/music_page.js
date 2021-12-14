@@ -20,43 +20,43 @@ $(document).ready(function () {
     */
     var etude = {
         bars: [
-            { timestamp: 0, dur: 6.550132, measure: 0, slide: "images/music/etude_01.png" },
-            { timestamp: 6.550132, dur: 3.25178, measure: 3, slide: "images/music/etude_02.png" },
-            { timestamp: 9.801912, dur: 3.246132, measure: 5, slide: "images/music/etude_03.png" },
-            { timestamp: 13.048044, dur: 3.500522, measure: 7, slide: "images/music/etude_04.png" },
-            { timestamp: 16.548566, dur: 3.248912, measure: 9, slide: "images/music/etude_05.png" },
-            { timestamp: 19.797478, dur: 3.249912, measure: 11, slide: "images/music/etude_06.png" },
-            { timestamp: 23.04739, dur: 3.50268, measure: 13, slide: "images/music/etude_07.png" },
-            { timestamp: 26.55007, dur: 5.250572, measure: 15, slide: "images/music/etude_08.png" },
-            { timestamp: 31.800642, dur: 3.500797, measure: 18, slide: "images/music/etude_09.png" },
-            { timestamp: 35.301439, dur: 3.749062, measure: 20, slide: "images/music/etude_10.png" },
-            { timestamp: 39.050492, dur: 3.497977, measure: 22, slide: "images/music/etude_11.png" },
-            { timestamp: 42.548469, dur: 3.503261, measure: 24, slide: "images/music/etude_12.png" },
-            { timestamp: 46.05173, dur: 3.49651, measure: 26, slide: "images/music/etude_13.png" },
-            { timestamp: 49.54824, dur: 3.500493, measure: 28, slide: "images/music/etude_14.png" },
-            { timestamp: 53.048733, dur: 3.499473, measure: 30, slide: "images/music/etude_15.png" },
-            { timestamp: 56.548206, dur: 5.499476, measure: 32, slide: "images/music/etude_16.png" },
-            { timestamp: 62.047682, dur: 3.254155, measure: 35, slide: "images/music/etude_17.png" },
-            { timestamp: 65.301837, dur: 3.495474, measure: 37, slide: "images/music/etude_18.png" },
-            { timestamp: 68.797311, dur: 3.751365, measure: 39, slide: "images/music/etude_19.png" },
-            { timestamp: 72.548676, dur: 3.749065, measure: 41, slide: "images/music/etude_20.png" },
-            { timestamp: 76.297741, dur: 3.752402, measure: 43, slide: "images/music/etude_21.png" },
-            { timestamp: 80.050143, dur: 3.497321, measure: 45, slide: "images/music/etude_22.png" },
-            { timestamp: 83.547464, dur: 3.500332, measure: 47, slide: "images/music/etude_23.png" },
-            { timestamp: 87.047796, dur: 3.499538, measure: 49, slide: "images/music/etude_24.png" },
-            { timestamp: 90.547334, dur: 5.000961, measure: 51, slide: "images/music/etude_25.png" },
-            { timestamp: 95.548295, dur: 4.75191, measure: 54, slide: "images/music/etude_26.png" },
-            { timestamp: 100.300205, dur: 3.251491, measure: 57, slide: "images/music/etude_27.png" },
-            { timestamp: 103.551696, dur: 4.996067, measure: 59, slide: "images/music/etude_28.png" },
-            { timestamp: 108.547763, dur: 3.502566, measure: 62, slide: "images/music/etude_29.png" },
-            { timestamp: 112.050329, dur: 3.247267, measure: 64, slide: "images/music/etude_30.png" },
-            { timestamp: 115.297596, dur: 3.252446, measure: 66, slide: "images/music/etude_31.png" },
-            { timestamp: 118.550042, dur: 3.499711, measure: 68, slide: "images/music/etude_32.png" },
-            { timestamp: 122.049753, dur: 2.998197, measure: 70, slide: "images/music/etude_33.png" },
-            { timestamp: 125.04795, dur: 3.254362, measure: 72, slide: "images/music/etude_34.png" },
-            { timestamp: 128.302312, dur: 4.00, measure: 74, slide: "images/music/etude_35.png" },
+            { timestamp: 0, dur: 6.550132, measure: 0, slide: "images/music/stravinsky_slides/etude_01.jpg" },
+            { timestamp: 6.550132, dur: 3.25178, measure: 3, slide: "images/music/stravinsky_slides/etude_02.jpg"  },
+            { timestamp: 9.801912, dur: 3.246132, measure: 5, slide: "images/music/stravinsky_slides/etude_03.jpg"  },
+            { timestamp: 13.048044, dur: 3.500522, measure: 7, slide: "images/music/stravinsky_slides/etude_04.jpg"  },
+            { timestamp: 16.548566, dur: 3.248912, measure: 9, slide: "images/music/stravinsky_slides/etude_05.jpg"  },
+            { timestamp: 19.797478, dur: 3.249912, measure: 11, slide: "images/music/stravinsky_slides/etude_06.jpg"  },
+            { timestamp: 23.04739, dur: 3.50268, measure: 13, slide: "images/music/stravinsky_slides/etude_07.jpg"  },
+            { timestamp: 26.55007, dur: 5.250572, measure: 15, slide: "images/music/stravinsky_slides/etude_08.jpg"  },
+            { timestamp: 31.800642, dur: 3.500797, measure: 18, slide: "images/music/stravinsky_slides/etude_09.jpg"  },
+            { timestamp: 35.301439, dur: 3.749062, measure: 20, slide: "images/music/stravinsky_slides/etude_10.jpg"  },
+            { timestamp: 39.050492, dur: 3.497977, measure: 22, slide: "images/music/stravinsky_slides/etude_11.jpg"  },
+            { timestamp: 42.548469, dur: 3.503261, measure: 24, slide: "images/music/stravinsky_slides/etude_12.jpg" },
+            { timestamp: 46.05173, dur: 3.49651, measure: 26, slide: "images/music/stravinsky_slides/etude_13.jpg"  },
+            { timestamp: 49.54824, dur: 3.500493, measure: 28, slide: "images/music/stravinsky_slides/etude_14.jpg"  },
+            { timestamp: 53.048733, dur: 3.499473, measure: 30, slide: "images/music/stravinsky_slides/etude_15.jpg"  },
+            { timestamp: 56.548206, dur: 5.499476, measure: 32, slide: "images/music/stravinsky_slides/etude_16.jpg" },
+            { timestamp: 62.047682, dur: 3.254155, measure: 35, slide: "images/music/stravinsky_slides/etude_17.jpg"  },
+            { timestamp: 65.301837, dur: 3.495474, measure: 37, slide: "images/music/stravinsky_slides/etude_18.jpg" },
+            { timestamp: 68.797311, dur: 3.751365, measure: 39, slide: "images/music/stravinsky_slides/etude_19.jpg" },
+            { timestamp: 72.548676, dur: 3.749065, measure: 41, slide: "images/music/stravinsky_slides/etude_20.jpg"  },
+            { timestamp: 76.297741, dur: 3.752402, measure: 43, slide: "images/music/stravinsky_slides/etude_21.jpg"  },
+            { timestamp: 80.050143, dur: 3.497321, measure: 45, slide: "images/music/stravinsky_slides/etude_22.jpg"  },
+            { timestamp: 83.547464, dur: 3.500332, measure: 47, slide: "images/music/stravinsky_slides/etude_23.jpg"  },
+            { timestamp: 87.047796, dur: 3.499538, measure: 49, slide: "images/music/stravinsky_slides/etude_24.jpg"  },
+            { timestamp: 90.547334, dur: 5.000961, measure: 51, slide: "images/music/stravinsky_slides/etude_25.jpg"  },
+            { timestamp: 95.548295, dur: 4.75191, measure: 54, slide: "images/music/stravinsky_slides/etude_26.jpg"  },
+            { timestamp: 100.300205, dur: 3.251491, measure: 57, slide: "images/music/stravinsky_slides/etude_27.jpg" },
+            { timestamp: 103.551696, dur: 4.996067, measure: 59, slide: "images/music/stravinsky_slides/etude_28.jpg"  },
+            { timestamp: 108.547763, dur: 3.502566, measure: 62, slide: "images/music/stravinsky_slides/etude_29.jpg"  },
+            { timestamp: 112.050329, dur: 3.247267, measure: 64, slide: "images/music/stravinsky_slides/etude_30.jpg"  },
+            { timestamp: 115.297596, dur: 3.252446, measure: 66, slide: "images/music/stravinsky_slides/etude_31.jpg"  },
+            { timestamp: 118.550042, dur: 3.499711, measure: 68, slide: "images/music/stravinsky_slides/etude_32.jpg"  },
+            { timestamp: 122.049753, dur: 2.998197, measure: 70, slide: "images/music/stravinsky_slides/etude_33.jpg" },
+            { timestamp: 125.04795, dur: 3.254362, measure: 72, slide: "images/music/stravinsky_slides/etude_34.jpg"  },
+            { timestamp: 128.302312, dur: 4.00, measure: 74, slide: "images/music/stravinsky_slides/etude_35.jpg"  },
             // Add extra object to complete the overlay travel
-            { timestamp: 132.302312, dur: 4.00, measure: 76, slide: "images/music/etude_35.png" }
+            { timestamp: 132.302312, dur: 4.00, measure: 76, slide: "images/music/stravinsky_slides/etude_36.jpg"  }
         ]
     };
 
@@ -113,17 +113,17 @@ $(document).ready(function () {
 function turnPage(objProp) {
     if (objProp === 11) {
         // Change img upon measure number
-        $("#music-page").attr("src", "images/music/Etude_4_2.png");
+        $("#music-page").attr("src", "images/music/Etude_4_2.jpg");
     } else if (objProp === 22) {
-        $("#music-page").attr("src", "images/music/Etude_4_3.png");
+        $("#music-page").attr("src", "images/music/Etude_4_3.jpg");
     } else if (objProp === 32) {
-        $("#music-page").attr("src", "images/music/Etude_4_4.png");
+        $("#music-page").attr("src", "images/music/Etude_4_4.jpg");
     } else if (objProp === 43) {
-        $("#music-page").attr("src", "images/music/Etude_4_5.png");
+        $("#music-page").attr("src", "images/music/Etude_4_5.jpg");
     } else if (objProp === 54) {
-        $("#music-page").attr("src", "images/music/Etude_4_6.png");
+        $("#music-page").attr("src", "images/music/Etude_4_6.jpg");
     } else if (objProp === 66) {
-        $("#music-page").attr("src", "images/music/Etude_4_7.png");
+        $("#music-page").attr("src", "images/music/Etude_4_7.jpg");
     }
 }
 
