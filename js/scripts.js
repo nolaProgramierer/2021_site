@@ -101,5 +101,17 @@ window.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // Play code scoll on mouseover
+    document.querySelector("#prog-img").addEventListener("mouseover", function () {
+        document.querySelector("#prog-img video").play();
+        console.log("Mouseover video");
+    })
+
+    // Pause video on mouseout
+    document.querySelector("#prog-img").addEventListener("mouseout", function () {
+        document.querySelector("#prog-img video").pause();
+        console.log("Mouseout of video");
+    })
+
     console.log("DOM Content loaded and parsed")
 });
