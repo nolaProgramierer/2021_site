@@ -193,6 +193,14 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: .9;
+    transition: transform 1s, opacity 1s;
+}
+.word-cloud img:hover  {
+   transform: scale(1.25);
+   opacity: 1;
+  
+   
 }
 /* ---------------------------------
     Music general page 

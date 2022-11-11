@@ -113,5 +113,7 @@ window.addEventListener("DOMContentLoaded", function () {
         console.log("Mouseout of video");
     })
 
+
+
     console.log("DOM Content loaded and parsed")
 });
