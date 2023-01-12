@@ -81,9 +81,10 @@ header {
     position: relative;
 }
 .home-statement p {
-    font-family: 'Tulpen One', cursive;
-    font-size: 2em;
+    font-family: 'Alegreya';
+    font-size: 1.25em;
     margin-top: 100px;
+    text-align: center;
 }
 /*
 .home-statement p::before {
@@ -481,6 +482,31 @@ h1 {
     grid-column: 1 / 9;
     justify-self: center;
     margin-top: 100px;
+}
+#contact-hero-img {
+    grid-row: 1 / 2;
+    grid-column: 1 / 9;
+    height: 80vh;
+    background-image: url(../images/contact/contact_header.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#contact-invitation {
+    grid-row: 2 / 3;
+    grid-column: 1 / 6;
+    height: 200px;
+    background-color: #fffce3;
+    margin-top: -180px;
+}
+#contact-invitation p {
+    text-align: center;
+    font-size: 2em;
+}
+#contact-form {
+    grid-row: 3 / 4;
+    grid-column: 1 / 9;
+    height: 200px;
 }
 
 
