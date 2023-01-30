@@ -3,7 +3,7 @@ $(document).ready(function () {
     // Intialize jwplayer instance
     var player = jwplayer("videoDiv").setup({
         // Media file hosted on AWS
-        file: "https://gl-music-site.s3.amazonaws.com/videos/stravinsky_etude4.mp4",
+        file: "https://gl-site-2022.s3.amazonaws.com/stravinsky_etude4.mp4",
         // Player instance options
         responsive: true,
         width: "100%",
